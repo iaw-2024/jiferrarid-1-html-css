@@ -1,0 +1,11 @@
+div.container {
+    border: 2px solid black;
+    display: grid;
+    grid-template-columns: 0.25fr 1fr;
+    gap: 10px;
+}
+div.textBox {
+    display: grid;
+    grid-template-rows: 1fr 1fr; /* Two rows with equal height */
+    gap: 20px;
+}
