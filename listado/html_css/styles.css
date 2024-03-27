@@ -1,11 +1,114 @@
-div.container {
-    border: 2px solid black;
-    display: grid;
-    grid-template-columns: 0.25fr 1fr;
-    gap: 10px;
+body {
+    padding:1em;
+    background-color: #f5f5dc;
+    text-align: justify;
 }
-div.textBox {
-    display: grid;
-    grid-template-rows: 1fr 1fr; /* Two rows with equal height */
-    gap: 20px;
+
+div.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    text-align:left;
+    width:60%;
+    font-size: 64px; /* Tamaño de letra 24px */
+    font-family: Cambria, serif; /* Estilo de fuente Cambria */
+}
+
+h3 {
+    text-align:left;
+    width: 60%;
+    font-size: 24px;
+    font-family: Cambria, serif;
+    margin-top: -1em;
+    text-align: justify;
+}
+
+div.writterInfoBox {
+    display: flex;
+    align-items: top;
+    width: 60%;
+    text-align: justify;
+}
+div.writterInfoBoxText {
+    gap: 0.25em;
+}
+div.writterInfoBoxBody {
+
+}
+div.avatar {
+    margin: 10px;
+    height: auto;
+}
+div.avatar img {
+    width: 100%; /* La imagen ocupará el 100% del ancho del contenedor */
+    height: auto; /* La altura se ajustará automáticamente */
+    display: block;
+}
+div.contentContainer {
+    margin-top: 1em;
+    width: 60%;
+    line-height: 1.5; /* Interlineado 1.5 veces el tamaño de la fuente */
+    font-size: 18px; /* Tamaño de letra 24px */
+    font-family: Cambria, serif; /* Estilo de fuente Cambria */
+     /* Color de fondo amarillo pastel */
+    padding: 10px;
+}
+.itemContainer {
+    padding-left: 1em;
+}
+div.contentContainer img {
+    width: 100%; /* La imagen ocupará el 100% del ancho del contenedor */
+    display: block;
+    margin-top:1em;
+    margin-bottom:1em;
+}
+@media (max-width: 1000px) {
+    div.writterInfoBox {
+        width: 75%;
+    }
+    div.contentContainer {
+        width: 75%;
+    }
+    h3 {
+        width: 75%;
+    }
+    h1 {
+        width: 75%;
+    }
+}
+
+@media (max-width: 800px) {
+    div.writterInfoBox {
+        width: 100%;
+    }
+    div.contentContainer {
+        width: 100%;
+    }
+    h3 {
+        width: 100%;
+    }
+    h1 {
+        width: 100%;
+    }
+}
+
+@media (max-width: 650px) {
+    div.avatar {
+        display: none;
+    }
+    div.writterInfoBox {
+        border: 0px none black;
+    }
+    div.writterInfoBoxBody{
+        display: none;
+    }
+    div.writterInfoBoxHeader{
+        font-size:.75em;
+        margin-top:-2em;
+        margin-bottom:-2em;
+    }
 }
