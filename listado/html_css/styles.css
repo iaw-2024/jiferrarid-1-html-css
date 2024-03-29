@@ -10,7 +10,6 @@ div.container {
     justify-content: center;
     align-items: center;
 }
-
 h1 {
     text-align:left;
     width:60%;
@@ -18,7 +17,17 @@ h1 {
     font-family: Cambria, serif; /* Estilo de fuente Cambria */
 }
 
-div.contentContainer h2 {
+object.contentContainer{
+    padding:0px;
+    margin-top: 0px;
+    height: 300px;
+}
+
+object.comments{
+    height: 420px;
+}
+
+.contentContainer h2 {
     margin-top:-1em;
 }
 
@@ -49,7 +58,7 @@ div.avatar img {
     height: auto; /* La altura se ajustará automáticamente */
     display: block;
 }
-div.contentContainer {
+.contentContainer {
     margin-top: 1em;
     width: 60%;
     line-height: 1.5; /* Interlineado 1.5 veces el tamaño de la fuente */
@@ -61,7 +70,7 @@ div.contentContainer {
 .itemContainer {
     padding-left: 1em;
 }
-div.contentContainer img {
+.contentContainer img {
     width: 100%; /* La imagen ocupará el 100% del ancho del contenedor */
     display: block;
     margin-top:1em;
@@ -79,20 +88,20 @@ div.formInput{
 div.formInput button{
     padding: 1em;
 }
-div.comments{
+object.comments{
     width:60%;
     margin-top: -1em;
 } 
-div.comments div.writterInfoBox{
+object.comments div.writterInfoBox{
     width:100%;
     margin-top: 0.5em;
     border: 2px solid gray;
 }
-div.comments div.writterInfoBoxText{
+object.comments div.writterInfoBoxText{
     padding-right: 1em;
     margin-bottom: 1em;
 }
-div.comments button{
+object.comments button{
     width: 100%;
     padding: 2em;
     margin-top: 1em;
@@ -110,7 +119,7 @@ div.comment {
     div.writterInfoBox {
         width: 75%;
     }
-    div.contentContainer {
+    .contentContainer {
         width: 75%;
     }
     h3 {
@@ -119,7 +128,7 @@ div.comment {
     h1 {
         width: 75%;
     }
-    div.comments {
+    object.comments {
         width: 75%;
     }
 }
@@ -128,7 +137,7 @@ div.comment {
     div.writterInfoBox {
         width: 100%;
     }
-    div.contentContainer {
+    .contentContainer {
         width: 100%;
     }
     h3 {
@@ -137,7 +146,7 @@ div.comment {
     h1 {
         width: 100%;
     }
-    div.comments {
+    object.comments {
         width: 100%;
     }
 }
