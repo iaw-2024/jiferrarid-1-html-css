@@ -13,8 +13,8 @@ div.container {
 h1 {
     text-align:left;
     width:60%;
-    font-size: 64px; /* Tamaño de letra 24px */
-    font-family: Cambria, serif; /* Estilo de fuente Cambria */
+    font-size: 64px;
+    font-family: Cambria, serif;
 }
 
 object.contentContainer{
@@ -54,24 +54,23 @@ div.avatar {
     height: auto;
 }
 div.avatar img {
-    width: 100%; /* La imagen ocupará el 100% del ancho del contenedor */
-    height: auto; /* La altura se ajustará automáticamente */
+    width: 100%;
+    height: auto;
     display: block;
 }
 .contentContainer {
     margin-top: 1em;
     width: 60%;
-    line-height: 1.5; /* Interlineado 1.5 veces el tamaño de la fuente */
-    font-size: 18px; /* Tamaño de letra 24px */
-    font-family: Cambria, serif; /* Estilo de fuente Cambria */
-     /* Color de fondo amarillo pastel */
+    line-height: 1.5;
+    font-size: 18px;
+    font-family: Cambria, serif;
     padding: 10px;
 }
 .itemContainer {
     padding-left: 1em;
 }
 .contentContainer img {
-    width: 100%; /* La imagen ocupará el 100% del ancho del contenedor */
+    width: 100%;
     display: block;
     margin-top:1em;
     margin-bottom:1em;
