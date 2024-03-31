@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../../listado/tailwindcss/styles.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <h2 class="text-2xl py-4">Comentarios</h2>
+    <form action="enviar.php" method="POST">
+        <div class="w-full">
+            <label class="p-4" for="name">Nombre:</label>
+            <input class="w-full" type="text" id="name" name="name" required>   
+        </div>  
+        <div class="w-full">
+            <label class="p-4" for="email">Correo electrónico:</label>
+            <input class="w-full" type="email" id="email" name="email" required>    
+        </div>
+        <div class="w-full">
+            <label class="p-4" for="comment">Mensaje:</label>
+            <textarea class="w-full border-black" id="comment" name="comment" rows="4" required></textarea>    
+        </div>    
+        <button class="col-12" type="submit">Enviar</button>
+    </form>
+</body>
+</html>
