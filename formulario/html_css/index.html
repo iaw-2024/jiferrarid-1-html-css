@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+    <head>
+        <link href="styles.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <div class="contentContainer">
+                <h2>Comentarios</h2>
+                <form action="enviar.php" method="POST">
+                    <div class="formInput">
+                        <label for="name">Nombre:</label>
+                        <input type="text" id="name" name="name" required>   
+                    </div>  
+                    <div class="formInput">
+                        <label for="email">Correo electrónico:</label>
+                        <input type="email" id="email" name="email" required>    
+                    </div>
+                    <div class="formInput">
+                        <label for="comment">Mensaje:</label>
+                        <textarea id="comment" name="comment" rows="4" required></textarea>        
+                        <button type="submit"><b>Enviar</b></button>
+                    </div>
+                </form>
+            </div> 
+        </div>
+    </body>
+</html>

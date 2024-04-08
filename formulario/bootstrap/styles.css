@@ -1,11 +1,5 @@
 body {
     background-color: #f5f5dc;
     text-align: justify;
-    font-family: Cambria, serif;
-}
-form{
-    padding:1em
-}
-button{
-    margin-top:1em
+    margin:1em;
 }

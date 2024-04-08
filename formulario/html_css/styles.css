@@ -1,17 +1,56 @@
 body {
+    padding:1em;
     background-color: #f5f5dc;
     text-align: justify;
 }
+
 div.container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
 .contentContainer h2 {
+    margin-top:-1em;
     font-weight: 500;
     font-size: 2em;
-    margin:0px;
+}
+
+.contentContainer label{
+    margin-left: 0.6em;
+    font-weight: 400;
+}
+
+.contentContainer input{
+    border: 1px solid darkgrey;
+    border-radius: .1em;
+    padding: 0.4em;
+}
+
+.contentContainer textarea{
+    border: 1px solid darkgrey;
+    border-radius: .1em;
+    padding: 0.4em;
+}
+
+h3 {
+    text-align:left;
+    width: 60%;
+    font-size: 24px;
+    font-family: Cambria, serif;
+    margin-top: -1em;
+    text-align: justify;
+}
+
+div.writterInfoBox {
+    display: flex;
+    align-items: top;
+    width: 60%;
+    text-align: justify;
+}
+div.writterInfoBoxText {
+    gap: 0.25em;
 }
 div.avatar {
     margin: 10px;
@@ -36,29 +75,51 @@ div.avatar img {
 .contentContainer img {
     width: 100%;
     display: block;
+    margin-top:1em;
+    margin-bottom:1em;
+}
+form{
+    margin-top:-1em;
+}
+div.formInput{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap:0.25em;
+    margin-bottom:0.25em;
 }
 button{
     margin-top:1em;
     padding: 1em;
     background: blue;
     color: white;
-    width: fit-content;
+    width: 10%;
     border:none;
     border-radius: 0.5em;
 }
 button:hover{
     background: rgba(0, 0, 175,255);
 }
+object.comments{
+    width:60%;
+    margin-top: -1em;
+} 
+object.comments div.writterInfoBox{
+    width:100%;
+    margin-top: 0.5em;
+    border: 2px solid gray;
+}
+object.comments div.writterInfoBoxText{
+    padding-right: 1em;
+    margin-bottom: 1em;
+}
 div.comment {
     display: flex;
     align-items: top;
     width: 100%;
     text-align: justify;
-    gap: 0.25em;
-    margin-bottom: 1em;
 }
-div.commentText {
-    padding-left:2em;
+div.comment {
+    gap: 0.25em;
 }
 @media (max-width: 1000px) {
     div.writterInfoBox {
@@ -110,8 +171,5 @@ div.commentText {
         font-size:.75em;
         margin-top:-2em;
         margin-bottom:-2em;
-    }
-    div.commentText {
-        padding-left:0;
     }
 }
