@@ -12,15 +12,15 @@
         <form class="col-12" action="enviar.php" method="POST">
             <div class="row">
                 <label class="form-label">Nombre:</label>
-                <input required>   
+                <input type="text" id="name" name="name" required>   
             </div>  
             <div class="row">
                 <label class="form-label">Correo electrónico:</label>
-                <input required>    
+                <input type="email" id="email" name="email" required>    
             </div>
             <div class="row">
                 <label class="form-label">Mensaje:</label>
-                <textarea rows="4" required></textarea>    
+                <textarea id="comment" name="comment" rows="4" required></textarea>    
             </div>    
         </form>
         <button class="row btn btn-primary" style="margin-top:1em" type="submit"><b>Enviar</b></button>
