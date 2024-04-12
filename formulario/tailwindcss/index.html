@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>Tailwind comment form</title>
+</head>
+<body class="mx-auto max-w-4xl p-4 sm:px-6 lg:px-8 bg-yellow-50">
+    <h2 class="text-3xl py-4">Comentarios</h2>
+    <form action="enviar.php" method="POST">
+        <div class="w-full">
+            <label class="p-4" for="name">Nombre:</label>
+            <input class="w-full my-1 border border-gray-500 rounded-md" type="text" id="name" name="name" required>   
+        </div>  
+        <div class="w-full">
+            <label class="p-4" for="email">Correo electrónico:</label>
+            <input class="w-full my-1 border border-gray-500 rounded-md" type="email" id="email" name="email" required>    
+        </div>
+        <div class="w-full">
+            <label class="p-4" for="comment">Mensaje:</label>
+            <textarea class="w-full my-1 border border-gray-500 rounded-md" id="comment" name="comment" rows="4" required></textarea>    
+        </div>    
+        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 my-2 rounded">Enviar</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,175 @@
+body {
+    padding:1em;
+    background-color: #f5f5dc;
+    text-align: justify;
+}
+
+div.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contentContainer h2 {
+    margin-top:-1em;
+    font-weight: 500;
+    font-size: 2em;
+}
+
+.contentContainer label{
+    margin-left: 0.6em;
+    font-weight: 400;
+}
+
+.contentContainer input{
+    border: 1px solid darkgrey;
+    border-radius: .1em;
+    padding: 0.4em;
+}
+
+.contentContainer textarea{
+    border: 1px solid darkgrey;
+    border-radius: .1em;
+    padding: 0.4em;
+}
+
+h3 {
+    text-align:left;
+    width: 60%;
+    font-size: 24px;
+    font-family: Cambria, serif;
+    margin-top: -1em;
+    text-align: justify;
+}
+
+div.writterInfoBox {
+    display: flex;
+    align-items: top;
+    width: 60%;
+    text-align: justify;
+}
+div.writterInfoBoxText {
+    gap: 0.25em;
+}
+div.avatar {
+    margin: 10px;
+    height: auto;
+}
+div.avatar img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.contentContainer {
+    margin-top: 1em;
+    width: 60%;
+    line-height: 1.5;
+    font-size: 16px;
+    font-family: system-ui;
+    padding: 10px;
+}
+.itemContainer {
+    padding-left: 1em;
+}
+.contentContainer img {
+    width: 100%;
+    display: block;
+    margin-top:1em;
+    margin-bottom:1em;
+}
+form{
+    margin-top:-1em;
+}
+div.formInput{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap:0.25em;
+    margin-bottom:0.25em;
+}
+button{
+    margin-top:1em;
+    padding: 1em;
+    background: blue;
+    color: white;
+    width: 10%;
+    border:none;
+    border-radius: 0.5em;
+}
+button:hover{
+    background: rgba(0, 0, 175,255);
+}
+object.comments{
+    width:60%;
+    margin-top: -1em;
+} 
+object.comments div.writterInfoBox{
+    width:100%;
+    margin-top: 0.5em;
+    border: 2px solid gray;
+}
+object.comments div.writterInfoBoxText{
+    padding-right: 1em;
+    margin-bottom: 1em;
+}
+div.comment {
+    display: flex;
+    align-items: top;
+    width: 100%;
+    text-align: justify;
+}
+div.comment {
+    gap: 0.25em;
+}
+@media (max-width: 1000px) {
+    div.writterInfoBox {
+        width: 75%;
+    }
+    .contentContainer {
+        width: 75%;
+    }
+    h3 {
+        width: 75%;
+    }
+    h1 {
+        width: 75%;
+    }
+    object.comments {
+        width: 75%;
+    }
+}
+
+@media (max-width: 800px) {
+    div.writterInfoBox {
+        width: 100%;
+    }
+    .contentContainer {
+        width: 100%;
+    }
+    h3 {
+        width: 100%;
+    }
+    h1 {
+        width: 100%;
+    }
+    object.comments {
+        width: 100%;
+    }
+}
+
+@media (max-width: 650px) {
+    div.avatar {
+        display: none;
+    }
+    div.writterInfoBox {
+        border: 0px none black;
+    }
+    div.writterInfoBoxBody{
+        display: none;
+    }
+    div.writterInfoBoxHeader{
+        font-size:.75em;
+        margin-top:-2em;
+        margin-bottom:-2em;
+    }
+}

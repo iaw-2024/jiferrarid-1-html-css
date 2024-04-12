@@ -1,0 +1,26 @@
+body {
+    padding:1em;
+    background-color: #f5f5dc;
+    text-align: justify;
+}
+.authorInfo {
+    margin-bottom:1em;
+}
+.commentBody {
+    font-family: Cambria, serif;
+}
+img {
+    padding: 1em;
+    padding-left:0px;
+}
+@media (max-width: 540px) {
+    div.authorInfo img {
+        display: none;
+    }
+    div.authorInfo img {
+        display: none;
+    }
+    div.authorInfo div.authorDescription{
+        display: none;
+    }
+}
